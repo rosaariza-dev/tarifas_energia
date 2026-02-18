@@ -42,14 +42,6 @@ async def get_estadisticas():
         )
     
 
-@router.get("/promedio")
-def promedio():
-    est = Estadistica()
-    costo_promedio = est.get_promedio_costo_total_kwh()
-    total_operadores = est.get_total_operadores()
-    fechas_actualizacion = est.fechas_actualizacion()
-    return fechas_actualizacion
-
 
 
 
