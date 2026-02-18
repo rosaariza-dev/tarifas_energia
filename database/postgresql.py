@@ -1,11 +1,12 @@
-import logging
 from psycopg_pool import ConnectionPool
 from contextlib import contextmanager
 from typing import Optional, List, Tuple, Any
+from config.logger import get_logger
 
+logger = get_logger(__name__)
 
 class Database:
-
+    
     def __init__(self):
         self._pool = None
 
