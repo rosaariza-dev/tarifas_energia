@@ -83,7 +83,6 @@ class Pipeline:
                 password=settings.EMAIL_PASSWORD,
             )
 
-
             logger.info("Correo enviado correctamente")
 
         except Exception:
