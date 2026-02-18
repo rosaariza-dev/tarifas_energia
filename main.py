@@ -45,4 +45,4 @@ app.include_router(estadistica.router)
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"Api de tarifas corriendo"}

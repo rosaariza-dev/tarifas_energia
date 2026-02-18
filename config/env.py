@@ -7,6 +7,8 @@ class Settings(BaseSettings):
     ETL_API:str
     APP_TOKEN:str
     FRONT_URL:str
+    EMAIL_PASSWORD:str
+    ACCOUNT_EMAIL:str
 
     class Config:
         env_file = ".env"
