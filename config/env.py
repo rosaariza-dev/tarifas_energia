@@ -6,6 +6,7 @@ class Settings(BaseSettings):
     ETL_URL:str
     ETL_API:str
     APP_TOKEN:str
+    FRONT_URL:str
 
     class Config:
         env_file = ".env"
